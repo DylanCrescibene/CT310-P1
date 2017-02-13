@@ -19,6 +19,8 @@
 <body class="document">
 	<div class="mainContainer">
 		<p>Green Bean, Oregano, Mint</p>
+		
+		<?php include 'footer.php';?>
 	</div>
 </body>
 
