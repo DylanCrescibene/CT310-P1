@@ -18,11 +18,15 @@
 
 <body class="document">
 	<?php include 'header.php';?>
+	<?php include 'nav.php';?>
+	
 	<div class="mainContainer">
 		<p>Green Bean, Oregano, Mint</p>
 		
-		<?php include 'footer.php';?>
+		
 	</div>
+	
+	<?php include 'footer.php';?>
 </body>
 
 </html>
