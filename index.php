@@ -17,6 +17,7 @@
 </head>
 
 <body class="document">
+	<?php include 'header.php';?>
 	<div class="mainContainer">
 		<p>Green Bean, Oregano, Mint</p>
 		
