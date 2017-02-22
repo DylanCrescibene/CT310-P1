@@ -1,5 +1,5 @@
 <?php
-$pgTitle = "Mint";
+$pgTitle = "Green Beans";
 include ('header.php');
 ?>
 
