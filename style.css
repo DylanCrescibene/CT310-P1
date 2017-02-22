@@ -11,6 +11,8 @@ body {
 	background-color: white;
 }
 
+H2 { text-align: center }
+
 nav.navigation{
 	border: 1px solid rgb(156, 97, 40);
 	text-align: center;
@@ -46,11 +48,14 @@ nav.navigation li:hover > a{
 	text-align:center;
 	width: 100%;
 	margin:auto;
-	color: rgb(83, 199, 233)
+	color: rgb(83, 199, 233);
+	
+	background-color: white;
 }
 
 .pageContent {
 	padding: 2em;
+	
 }
 
 
