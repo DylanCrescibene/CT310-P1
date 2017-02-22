@@ -13,6 +13,10 @@ include ('header.php');
 
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 	<h2>Oregano</h2>
+	<p>
+		This herb is part of the mint family. Order fresh leaves to use now or let them dry out for more intense flavor!
+		Oregano is wildly used Italian-American and Mediterranean cuisine.
+	</p>
 </div>
 						
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">

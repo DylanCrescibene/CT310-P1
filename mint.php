@@ -13,6 +13,10 @@ include ('header.php');
 
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 	<h2>Mint</h2>
+	<p>
+		Use these fresh leaves to add a minty flavor to your tea or candy, or as a natural breath freshener.
+		These leaves can also be used to add a pleasant aroma to any room.
+	</p>
 </div>
 						
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">

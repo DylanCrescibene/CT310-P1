@@ -12,7 +12,11 @@ include ('header.php');
 <div class="col-lg-2 col-md-2 hidden-sm hidden-xs" ></div>
 
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
-		<h2>Green Beans</h2>
+	<h2>Green Beans</h2>
+	<p>
+		These fresh green beans are a great source of fiber, antioxidants and vitamins.
+		Steam them, fry them, or bake them in a casserole for a tasty, healthy treat!
+	</p>
 </div>
 						
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">

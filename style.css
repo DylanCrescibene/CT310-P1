@@ -16,8 +16,10 @@ h2 {
 .footer {
 	text-align:center;
 	margin-top:10px;
-	color: rgb(83, 199, 233);
+	padding: 2em;
+	color: rgb(86, 168, 193);
 	background-color: white;
+	border-top: solid 2px rgb(40, 130, 156);
 }
 
 .photoCred {
@@ -25,8 +27,6 @@ h2 {
 	font-size: 10px;
 	margin-top: 1em;
 }
-
-
 
 
 
