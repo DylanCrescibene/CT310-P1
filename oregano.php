@@ -12,7 +12,7 @@ include ('header.php');
 <div class="mainContainer">
 	
 	<h2>Oregano</h2>
-	
+	<img  src="./oregano.jpg" class="img-circle img-responsive" alt="Picture of Fresh Oregano Leaves" />
 </div>
 
 <!-- End of contents -->
