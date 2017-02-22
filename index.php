@@ -9,11 +9,11 @@ include ('header.php');
 
 <!-- Start contents of main page here. -->
 
-<div class="mainContainer">
-	
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 container-fluid">
 	<h2>Home Page</h2>
-	
 </div>
+
 
 <!-- End of contents -->
 <?php include('footer.php'); ?>

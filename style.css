@@ -1,61 +1,29 @@
-body {
-    font-family: Verdana, Arial, sans-serif;
-    color: rgb(6, 64, 80);
-    background-color: rgb(40, 130, 156);
-    width: 800px;
-    margin:auto;
+.jumbotron {
+	background-color: rgb(40, 130, 156);
+	margin-bottom: 0px;
+	color:white; 
+	font-family: 'Alegreya Sans SC';
 }
-
 .mainContainer {
-	height: 100vh;
-	background-color: white;
+	padding: 2em;
 }
 
-H2 { text-align: center }
-
-nav.navigation{
-	border: 1px solid rgb(156, 97, 40);
-	text-align: center;
-	background-color: rgb(156, 97, 40);
+h2 {
+	text-align: center 
 }
 
-nav.navigation li {
-	display: inline-block;
-	border: 2px solid black;
-	padding: 2px;
-	width: 8em;
-	background-color: black;
-}
-
-nav.navigation li:hover {
-	background-color:  rgb(232, 171, 112);
-}
-
-nav.navigation li.active{
-	border: 2px solid rgb(83, 199, 233);
-}
-
-nav.navigation li a{
-	color: White;
-	text-decoration:none
-}
-
-nav.navigation li:hover > a{
-	color: black;
-}
 
 .footer {
 	text-align:center;
-	width: 100%;
-	margin:auto;
+	margin-top:10px;
 	color: rgb(83, 199, 233);
-	
 	background-color: white;
 }
 
-.pageContent {
-	padding: 2em;
-	
+.photoCred {
+	text-align: center;
+	font-size: 10px;
+	margin-top: 1em;
 }
 
 
