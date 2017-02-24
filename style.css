@@ -27,7 +27,7 @@ h1, h2, h3{
 	text-align: center;
 }
 
-.avatar {
+.img-circle{
 	text-align: center;
-	clear: both;
+	clear: right;
 }

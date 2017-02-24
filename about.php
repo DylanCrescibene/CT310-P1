@@ -29,7 +29,7 @@ include ('header.php');
 		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
 			<h2>Brendon Powley</h2>
 			<p>
-				<img class="avatar" src="./brendon.jpg" class="img-circle" alt="bp" width="280" height="290">
+				<img src="./brendon.jpg" class="img-circle" alt="bp" width="280" height="290">
 				Brendon is a junior at CST studying applied computing technology. his interests include sports, music, and biking.
 			</p>
 		</div>
