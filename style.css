@@ -8,11 +8,6 @@
 	padding: 2em;
 }
 
-h2 {
-	text-align: center
-}
-
-
 .footer {
 	text-align:center;
 	margin-top:10px;
@@ -30,4 +25,9 @@ h2 {
 
 h1, h2, h3{
 	text-align: center;
+}
+
+.avatar {
+	text-align: center;
+	clear: both;
 }
