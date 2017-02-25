@@ -19,14 +19,14 @@ include ('header.php');
 		</div>
 	</div>"
 	<div class="row">
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+		<div class="col-sm-6">
 			<h2>Dylan Crescibene</h2>
 			<img src="./dylan.jpg" class="img-circle center-block" alt="dc" width="280" height="290">
 			<p style="text-align: center;">
 				Dylan is a senior at CSU studying computer science. His interests include videogames, skateboarding, and music.
 			</p>
 		</div>
-		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+		<div class="col-sm-6">
 			<h2>Brendon Powley</h2>
 			<img src="./brendon.jpg" class="img-circle center-block" alt="bp" width="280" height="290">
 			<p style="text-align: center;">
