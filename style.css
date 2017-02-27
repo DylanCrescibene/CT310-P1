@@ -1,17 +1,12 @@
 .jumbotron {
 	background-color: rgb(40, 130, 156);
 	margin-bottom: 0px;
-	color:white; 
+	color:white;
 	font-family: 'Alegreya Sans SC';
 }
 .mainContainer {
 	padding: 2em;
 }
-
-h2 {
-	text-align: center 
-}
-
 
 .footer {
 	text-align:center;
@@ -28,9 +23,10 @@ h2 {
 	margin-top: 1em;
 }
 
+h1, h2, h3{
+	text-align: center;
+}
 
-
-
-
-
-
+.avatar{
+	margin-bottom: 10px;
+}
