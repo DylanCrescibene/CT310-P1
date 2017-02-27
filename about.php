@@ -17,7 +17,7 @@ include ('header.php');
 				This is our Project 1 Page for CT310
 			</h3>
 		</div>
-	</div>"
+	</div>
 	<div class="row">
 		<div class="col-sm-6">
 			<h2>Dylan Crescibene</h2>
