@@ -17,8 +17,9 @@ include ('header.php');
 		Use these fresh leaves to add a minty flavor to your tea or candy, or as a natural breath freshener.
 		These leaves can also be used to add a pleasant aroma to any room.
 	</p>
+	<?php include('comments.php'); ?>
 </div>
-						
+
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 	<img  src="./mint.jpg" class="img-circle img-responsive" alt="Picture of Fresh Mint Leaves" />
 	<p class="photoCred">Photo by krosseel at <a href="https://morguefile.com/">Morguefile.com</a></p>

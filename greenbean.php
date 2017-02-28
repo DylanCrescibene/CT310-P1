@@ -17,8 +17,9 @@ include ('header.php');
 		These fresh green beans are a great source of fiber, antioxidants and vitamins.
 		Steam them, fry them, or bake them in a casserole for a tasty, healthy treat!
 	</p>
+	<?php include('comments.php'); ?>
 </div>
-						
+
 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
 	<img  src="./greenbeans.jpg" class="img-circle img-responsive" alt="Picture of Fresh Green Beans" />
 	<p class="photoCred">Photo by veggiegretz at <a href="https://morguefile.com/">Morguefile.com</a></p>

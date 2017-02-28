@@ -30,3 +30,22 @@ h1, h2, h3{
 .avatar{
 	margin-bottom: 10px;
 }
+
+.rounded{
+	border-radius: 6px;
+	border: 1px solid grey;
+}
+
+.comment-section{
+	border-top: 1px dotted grey;
+	border-bottom: 1px dotted grey;
+	padding: 5px;
+}
+
+.title-box{
+	text-align: center;
+}
+
+.form-inline{
+	padding: 5px;
+}
