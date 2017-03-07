@@ -1,6 +1,9 @@
 <?php
 $pgTitle = "Log In";
 include ('header.php');
+// start the session
+session_start();
+
 ?>
 
 </head>
@@ -9,11 +12,11 @@ include ('header.php');
 
 <!-- Start contents of main page here. -->
 
-	
+
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 	<?php
 function validateCredentials($user, $pass) {
-	
+
 	if($user=="dcresc" and md5($pass)=="482c811da5d5b4bc6d497ffa98491e38")	{
 		return true;
 	}
@@ -32,12 +35,14 @@ function validateCredentials($user, $pass) {
 if (isset($_POST['op'])) {
 	$username     = $_POST['username'];
 	$password  = $_POST['password'];
-	
+
 	date_default_timezone_set ( 'America/Denver' );
-	
-	if (validateCredentials($username, $password)){	
+
+	if (validateCredentials($username, $password)){
 		$_SESSION["loggedIn"] = true;
-		echo "Logged in";
+		$_SESSION["sessionUser"] = $username;
+		$_SESSION["sessionPass"] = $password;
+		echo "<p style=\"text-align: center\">Logged in as [" . $_SESSION["sessionUser"] . "]</p>";
 	}
 	else {
 		$_SESSION["loggedIn"] = false;
@@ -59,8 +64,8 @@ else {
 <?php
 }
 ?>
-	
-</div>	
+
+</div>
 
 
 
