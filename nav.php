@@ -23,9 +23,14 @@
 			<div class="collapse navbar-collapse" id="myNavbar">	
 				<ul class="nav navbar-nav">
 					<li><a href="./index.php">Home</a></li>		
-					<li><a href="./greenbean.php">Green Beans</a></li>		
-					<li><a href="./mint.php">Mint</a></li>
-					<li><a href="./oregano.php">Oregano</a></li>
+					<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown">Ingredients</a>
+							<ul class="dropdown-menu">
+								<li><a href="./greenbean.php">Green Beans</a></li>		
+								<li><a href="./mint.php">Mint</a></li>
+								<li><a href="./oregano.php">Oregano</a> </li>
+							</ul>
+						</li>
 					<li><a href="./about.php">About Us</a></li>
 					<li><a href="./login.php">Login</a></li>
 				</ul>
