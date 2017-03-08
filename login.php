@@ -35,13 +35,15 @@ if (isset ( $_POST ['logout'] )) {
 
 if($_SESSION['sessionUser'] != 'Guest'){?>
 
-	<p style="text-align: center">Logged in as <strong>  <?php  echo  $_SESSION["sessionUser"] ?></strong></p>	
-	<p>Logged in at: <?php  echo $_SESSION['startTime'] ?></p>
-		
-	<form method="post" action="login.php">
-		 <input type="hidden" value="true" name="logout">
-		 <input type="submit" value="Logout">
-	</form><?php
+	<p style="text-align: center">Logged in as <strong>  <?php  echo  $_SESSION["sessionUser"] ?></strong></p>
+	<p style="text-align: center">Logged in at: <?php  echo $_SESSION['startTime'] ?></p>
+				
+	<div style="display: block; text-align: center">	
+		<form method="post" action="login.php">
+			 <input type="hidden" value="true" name="logout">
+			 <input type="submit" value="Logout" >
+		</form>
+	</div><?php
 }
 else {
 	if (isset($_POST['op'])) {
