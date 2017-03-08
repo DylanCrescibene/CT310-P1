@@ -49,3 +49,10 @@ h1, h2, h3{
 .form-inline{
 	padding: 5px;
 }
+
+.jumbotron{
+	 background-image: url(logo1.jpg);
+	 background-position: left center;
+	 background-repeat:  no-repeat;
+	 text-align:center;
+}
