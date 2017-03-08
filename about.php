@@ -37,7 +37,7 @@ include ('header.php');
 	<div class="row">
 		<div class="col-xs-12">
 			<p class="photoCred">All ingredient images from <a href="https://morguefile.com/">Mourgefile,com</a><br>
-				Header logo image from <a href="http://www.freepik.com/">Freepik.com</a> by valeria_aksakova</p> 
+				Header logo image by valeria_aksakova from <a href="http://www.freepik.com/">Freepik.com</a></p> 
 		</div>	
 	</div>
 </div>
