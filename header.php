@@ -1,5 +1,14 @@
 <?php
+session_name ( 'p1_group15' );
 session_start();
+date_default_timezone_set ( 'America/Denver' );
+
+	if(!isset($_SESSION['sessionUser'])){
+		$_SESSION['sessionUser'] = 'Guest';
+	}
+	if(!isset($_SESSION['startTime'])){
+		$_SESSION ['startTime'] = date ( "l d, M. g:i a", time () );
+	}
 ?>
 
 

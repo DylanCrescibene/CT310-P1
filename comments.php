@@ -1,6 +1,4 @@
-
-
-<?php if(isset($_SESSION["loggedIn"])){ ?>
+<?php if($_SESSION["sessionUser"] != 'Guest'){ ?>
 
 <div class="comment-box rounded">
   <div class="title-box">
@@ -8,7 +6,6 @@
   </div>
   <div class="comment-section">
     <p>Leave a Comment!</p>
-    <?php echo "<p>logged in as [" .$_SESSION["sessionUser"] . "]</p>"?>
   </div>
   <form class="form-inline" role="form">
     <div class="form-group">

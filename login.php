@@ -1,9 +1,6 @@
 <?php
 $pgTitle = "Log In";
 include ('header.php');
-// start the session
-session_start();
-
 ?>
 
 </head>
@@ -23,7 +20,7 @@ function validateCredentials($user, $pass) {
 	else if($user=="bpowley" and md5($pass)=="aaa7d6afc57651e74da49e330a15041f") {
 		return true;
 	}
-	else if($user=="ct310" and md5($pass)=="48f2f942692b08ec9de1ef9ada5230a3") {
+	else if($user=="ct310" and md5($pass)=="3aaec86181ee6974b99d893b4c1eb5b5") {
 		return true;
 	}
 	else {
@@ -31,40 +28,70 @@ function validateCredentials($user, $pass) {
 	}
 }
 
+if (isset ( $_POST ['logout'] )) {
+	$_SESSION ['sessionUser'] = "Guest";
+	$_SESSION ['startTime'] = date ( "l d, M. g:i a", time () );
+}
 
-if (isset($_POST['op'])) {
-	$username     = $_POST['username'];
-	$password  = $_POST['password'];
+if($_SESSION['sessionUser'] != 'Guest'){?>
 
-	date_default_timezone_set ( 'America/Denver' );
-
-	if (validateCredentials($username, $password)){
-		$_SESSION["loggedIn"] = true;
-		$_SESSION["sessionUser"] = $username;
-		$_SESSION["sessionPass"] = $password;
-		echo "<p style=\"text-align: center\">Logged in as [" . $_SESSION["sessionUser"] . "]</p>";
-	}
-	else {
-		$_SESSION["loggedIn"] = false;
-		echo "Nah";
-	}
+	<p style="text-align: center">Logged in as <strong>  <?php  echo  $_SESSION["sessionUser"] ?></strong></p>	
+	<p align="center">Logged in at: <?php  echo $_SESSION['startTime'] ?></p>
+		
+	<form method="post" action="login.php" align="center">
+		 <input type="hidden" value="true" name="logout">
+		 <input type="submit" value="Logout" align="center">
+	</form><?php
 }
 else {
-?>
-	<div>
-	   <h2 align="center">Please Log In</h2>
-	   <p align="center">Enter your credentials below. </p>
-	   <form method="post" action="login.php" align="center">
-		  Username:    <input type="text" name="username"    size="30" align="center"><br/>
-		  Password&nbsp;: <input type="password" name="password" size="30" align="center"><br/>
-		 <input type="hidden" value="done" name="op">
-		 <input type="submit" value="Send" align="center">
-	   </form>
-   </div>
-<?php
+	if (isset($_POST['op'])) {
+		$username  = $_POST['username'];
+		$password  = $_POST['password'];
+
+		if (validateCredentials($username, $password)){
+			$_SESSION["sessionUser"] = $username;
+			$_SESSION['startTime'] = date ( "l d, M. g:i a", time () ); ?>
+			
+			<p style="text-align: center">Logged in as <strong>  <?php  echo  $_SESSION["sessionUser"] ?></strong></p>;	
+			<p align="center">Logged in at: <?php  echo $_SESSION['startTime'] ?></p>
+				
+			<form method="post" action="login.php" align="center">
+				 <input type="hidden" value="true" name="logout">
+				 <input type="submit" value="Logout" align="center">
+			</form>
+		<?php
+		}
+		else { ?>
+			<div>
+			   <h2 align="center" style="color:red">Login Failed</h2>
+			   <p align="center" >Enter your credentials below. </p>
+			   <form method="post" action="login.php" align="center">
+				  Username:    <input type="text" name="username"    size="30" align="center"><br/>
+				  Password&nbsp;: <input type="password" name="password" size="30" align="center"><br/>
+				 <input type="hidden" value="done" name="op">
+				 <input type="submit" value="Send" align="center">
+			   </form>
+		   </div>
+		   <?php
+		}
+	}
+	else {
+		?>
+			<div>
+			   <h2 align="center">Please Log In</h2>
+			   <p align="center">Enter your credentials below. </p>
+			   <form method="post" action="login.php" align="center">
+				  Username:    <input type="text" name="username"    size="30" align="center"><br/>
+				  Password&nbsp;: <input type="password" name="password" size="30" align="center"><br/>
+				 <input type="hidden" value="done" name="op">
+				 <input type="submit" value="Send" align="center">
+			   </form>
+		   </div>
+		<?php
+	}
 }
 ?>
-
+	
 </div>
 
 
