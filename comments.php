@@ -11,7 +11,7 @@
 			var name = document.getElementById("displayName").innerHTML;
 			var d = new Date();
 			var date = (d.getMonth() + 1)+ "/" + d.getDate();
-			document.getElementById("comments").innerHTML += "\"" + comment +"\" - " + name + " on " + date +"<br/>";
+			document.getElementById("comments").innerHTML += "\"" + comment +"\" - " + name + " on " + date +"<br/><br/>";
 			document.getElementById("input").value = "";
 		}
 	</script>

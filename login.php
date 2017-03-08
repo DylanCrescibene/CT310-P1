@@ -36,11 +36,11 @@ if (isset ( $_POST ['logout'] )) {
 if($_SESSION['sessionUser'] != 'Guest'){?>
 
 	<p style="text-align: center">Logged in as <strong>  <?php  echo  $_SESSION["sessionUser"] ?></strong></p>	
-	<p align="center">Logged in at: <?php  echo $_SESSION['startTime'] ?></p>
+	<p>Logged in at: <?php  echo $_SESSION['startTime'] ?></p>
 		
-	<form method="post" action="login.php" align="center">
+	<form method="post" action="login.php">
 		 <input type="hidden" value="true" name="logout">
-		 <input type="submit" value="Logout" align="center">
+		 <input type="submit" value="Logout">
 	</form><?php
 }
 else {
@@ -52,24 +52,26 @@ else {
 			$_SESSION["sessionUser"] = $username;
 			$_SESSION['startTime'] = date ( "l d, M. g:i a", time () ); ?>
 			
-			<p style="text-align: center">Logged in as <strong>  <?php  echo  $_SESSION["sessionUser"] ?></strong></p>;	
-			<p align="center">Logged in at: <?php  echo $_SESSION['startTime'] ?></p>
+			<p style="text-align: center">Logged in as <strong>  <?php  echo  $_SESSION["sessionUser"] ?></strong></p>
+			<p style="text-align: center">Logged in at: <?php  echo $_SESSION['startTime'] ?></p>
 				
-			<form method="post" action="login.php" align="center">
-				 <input type="hidden" value="true" name="logout">
-				 <input type="submit" value="Logout" align="center">
-			</form>
+			<div style="display: block; text-align: center">	
+				<form method="post" action="login.php">
+					 <input type="hidden" value="true" name="logout">
+					 <input type="submit" value="Logout" >
+				</form>
+			</div>
 		<?php
 		}
 		else { ?>
-			<div>
-			   <h2 align="center" style="color:red">Login Failed</h2>
-			   <p align="center" >Enter your credentials below. </p>
-			   <form method="post" action="login.php" align="center">
-				  Username:    <input type="text" name="username"    size="30" align="center"><br/>
-				  Password&nbsp;: <input type="password" name="password" size="30" align="center"><br/>
+			<div style="display: block; text-align: center">
+			   <h2 style="color:red">Login Failed</h2>
+			   <p>Enter your credentials below. </p>
+			   <form method="post" action="login.php" >
+				  Username:    <input type="text" name="username"    size="30"><br/>
+				  Password&nbsp;: <input type="password" name="password" size="30"><br/>
 				 <input type="hidden" value="done" name="op">
-				 <input type="submit" value="Send" align="center">
+				 <input type="submit" value="Send" >
 			   </form>
 		   </div>
 		   <?php
@@ -77,14 +79,14 @@ else {
 	}
 	else {
 		?>
-			<div>
-			   <h2 align="center">Please Log In</h2>
-			   <p align="center">Enter your credentials below. </p>
-			   <form method="post" action="login.php" align="center">
-				  Username:    <input type="text" name="username"    size="30" align="center"><br/>
-				  Password&nbsp;: <input type="password" name="password" size="30" align="center"><br/>
+			<div style="display: block; text-align: center">
+			   <h2>Please Log In</h2>
+			   <p>Enter your credentials below. </p>
+			   <form method="post" action="login.php" >
+				  Username:    <input type="text" name="username"    size="30" ><br/>
+				  Password&nbsp;: <input type="password" name="password" size="30" ><br/>
 				 <input type="hidden" value="done" name="op">
-				 <input type="submit" value="Send" align="center">
+				 <input type="submit" value="Send">
 			   </form>
 		   </div>
 		<?php
